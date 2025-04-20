@@ -5,40 +5,41 @@
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../src'))
+
+sys.path.insert(0, os.path.abspath("../../src"))
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Flask Calculator'
-copyright = '2025, Juan Garcia'
-author = 'Juan Garcia'
-release = '1.0.0'
+project = "Flask Calculator"
+copyright = "2025, Juan Garcia"
+author = "Juan Garcia"
+release = "1.0.0"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.intersphinx',
-    'myst_parser'
+    "sphinx.ext.autodoc",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.viewcode",
+    "sphinx.ext.intersphinx",
+    "myst_parser",
 ]
 
-templates_path = ['_templates']
+templates_path = ["_templates"]
 exclude_patterns = []
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'sphinx_rtd_theme'
-html_static_path = ['_static']
+html_theme = "sphinx_rtd_theme"
+html_static_path = ["_static"]
 
 # Intersphinx configuration
 intersphinx_mapping = {
-    'python': ('https://docs.python.org/3', None),
-    'flask': ('https://flask.palletsprojects.com/en/3.0.x/', None),
+    "python": ("https://docs.python.org/3", None),
+    "flask": ("https://flask.palletsprojects.com/en/3.0.x/", None),
 }
 
 # Napoleon settings
