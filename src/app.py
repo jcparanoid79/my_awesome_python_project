@@ -2,7 +2,7 @@
 
 This module provides a web interface for basic arithmetic operations including
 addition, subtraction, multiplication, and division. The calculator handles
-errors such as invalid input and division by zero. 0
+errors such as invalid input and division by zero.git add.
 
 Attributes:
     app: A Flask application instance.
