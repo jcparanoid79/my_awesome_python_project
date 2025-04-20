@@ -1,0 +1,4 @@
+# requirements.txt
+ruff
+pytest
+# Add other initial packages herecd

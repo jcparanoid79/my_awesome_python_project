@@ -1,0 +1,51 @@
+# .gitignore
+
+# Byte-compiled / optimized / compiled files #
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging #
+.Python
+build/
+dist/
+eggs/
+*.egg-info/
+.cachedir/
+
+# Installer logs #
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage report files #
+.tox/
+.coverage
+.coverage.*
+.hypothesis/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+htmlcov/
+.nyc_output/
+coverage/
+
+# Environments #
+.venv/
+venv/
+env/
+# Add other virtual environment names if you use them
+
+# Editors and IDEs #
+.vscode/              # VS Code specific settings/files
+.idea/                # JetBrains IDEs
+*.swp                 # Vim swap files
+*.swo                 # Vim swap files
+
+# OS Files #
+.DS_Store             # macOS
+Thumbs.db             # Windows
+ehthumbs.db           # Windows
