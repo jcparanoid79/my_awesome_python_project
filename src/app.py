@@ -15,26 +15,27 @@ Routes:
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-app.secret_key = 'calculator-secret-key'  # Required for form handling
+app.secret_key = "calculator-secret-key"  # Required for form handling
 
-@app.route('/', methods=['GET', 'POST'])
+
+@app.route("/", methods=["GET", "POST"])
 def calculator():
     result = None
     error = None
-    
-    if request.method == 'POST':
+
+    if request.method == "POST":
         try:
-            num1 = float(request.form['num1'])
-            num2 = float(request.form['num2'])
-            operator = request.form['operator']
-            
-            if operator == 'add':
+            num1 = float(request.form["num1"])
+            num2 = float(request.form["num2"])
+            operator = request.form["operator"]
+
+            if operator == "add":
                 result = num1 + num2
-            elif operator == 'subtract':
+            elif operator == "subtract":
                 result = num1 - num2
-            elif operator == 'multiply':
+            elif operator == "multiply":
                 result = num1 * num2
-            elif operator == 'divide':
+            elif operator == "divide":
                 if num2 == 0:
                     error = "Error: Division by zero is not allowed"
                 else:
@@ -43,8 +44,9 @@ def calculator():
             error = "Error: Please enter valid numbers"
         except Exception as e:
             error = f"Error: {str(e)}"
-    
-    return render_template('calculator.html', result=result, error=error)
 
-if __name__ == '__main__':
+    return render_template("calculator.html", result=result, error=error)
+
+
+if __name__ == "__main__":
     app.run(debug=True)
